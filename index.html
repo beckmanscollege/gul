@@ -38,7 +38,7 @@
                         </div>
                 </div>
                     <div id="thumbnails" class="parallax-item">
-                        <div class="thumbnail thumbnail-1" data-name="Anteckningsblock.png" data-color="15" data-happiness="0"><img src="./Anteckningsblock.png" alt="Ett anteckningsblock från mitt livs värsta arbetsplats."></div>
+                        <div class="thumbnail thumbnail-1" data-name="anteckningsblock.png" data-color="15" data-happiness="0"><img src="./anteckningsblock.png" alt="Ett anteckningsblock från mitt livs värsta arbetsplats."></div>
                         <div class="thumbnail thumbnail-2" data-name="aprikosagat2.png" data-color="19" data-happiness="43"><img src="./aprikosagat2.png" alt="Aprikosagat. Inte min favoritsten."></div>
                         <div class="thumbnail thumbnail-3" data-name="cif2.png" data-color="2" data-happiness="58"><img src="./cif2.png" alt="Ella lånade ut sin cif till mig när jag flyttade in. Dagen efter köpte jag en egen."></div>
                         <div class="thumbnail thumbnail-4" data-name="Converse.png" data-color="16" data-happiness="99"><img src="./Converse.png" alt="Mina converse. När de åker fram är våren kommen."></div>
@@ -190,7 +190,7 @@
                 thumbnails.forEach(thumbnail => {
                     thumbnail.addEventListener('click', function() {
                         const imageName = this.getAttribute('data-name');
-                        const imagePath = imageName.includes('_Happiness') ? './images/' + imageName : imageName;
+                        const imagePath = imageName.includes('_Happiness') ? './' + imageName : imageName;
                         currentImage.src = imagePath;
 
                         // Set data attribute for active thumbnail
