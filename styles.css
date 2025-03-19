@@ -1,6 +1,8 @@
 :root {
     --border-style: 2px none blue;
     --black: #141414;
+    --white: #ffffff;
+    --whiteShadow: #e3a010;
 }
 
 body {
@@ -339,6 +341,26 @@ button.active {
     display: none;
 }
 
+/* Fifth image */
+#thumbnails .thumbnail-5 {
+    overflow: hidden;
+}
+
+.thumbnail-5 img {
+    transform: scale(2.2);
+    border: none;
+}
+
+/* 23rd image - same behavior as thumbnail-5 */
+#thumbnails .thumbnail-23 {
+    overflow: hidden;
+}
+
+.thumbnail-23 img {
+    transform: scale(2.2);
+    border: none;
+}
+
 /* First image (anteckningsblock.png) */
 .thumbnail-1 img {
     transform: rotate(-90deg);
@@ -354,16 +376,6 @@ button.active {
 /* Third image (cif2.png) */
 .thumbnail-3 img {
     transform: rotate(-90deg) scale(1);
-    border: none;
-}
-
-/* Fifth image */
-#thumbnails .thumbnail-5 {
-    overflow: hidden;
-}
-
-.thumbnail-5 img {
-    transform: scale(2.2);
     border: none;
 }
 
@@ -416,6 +428,60 @@ button.active {
     border: none;
 }
 
+.thumbnail-21 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
+.thumbnail-22 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
+#thumbnails .thumbnail-23 {
+    overflow: hidden;
+}
+
+.thumbnail-23 img {
+    transform: scale(2.2);
+    border: none;
+}
+
+.thumbnail-24 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
+.thumbnail-26 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
+.thumbnail-34 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
+.thumbnail-35 img{
+    transform: rotate(90deg);
+    border: none;
+}
+
+.thumbnail-37 img{
+    transform: rotate(90deg);
+    border: none;
+}
+
+.thumbnail-39 img{
+    transform: rotate(90deg);
+    border: none;
+}
+
+.thumbnail-40 img{
+    transform: rotate(-90deg);
+    border: none;
+}
+
 /* Hover effects */
 #thumbnails div:hover img {
     transform: scale(1.15);
@@ -437,6 +503,10 @@ button.active {
 }
 
 #thumbnails .thumbnail-5:hover img {
+    transform: scale(2.2) scale(1.15);
+}
+
+#thumbnails .thumbnail-23:hover img {
     transform: scale(2.2) scale(1.15);
 }
 
@@ -473,6 +543,42 @@ button.active {
     transform: rotate(-90deg) scale(1.15);
 }
 
+#thumbnails .thumbnail-21:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-22:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-24:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-26:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-34:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-35:hover img{
+    transform: rotate(90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-37:hover img{
+    transform: rotate(90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-39:hover img{
+    transform: rotate(90deg) scale(1.15);
+}
+
+#thumbnails .thumbnail-40:hover img{
+    transform: rotate(-90deg) scale(1.15);
+}
+
 /*.thumbnail-current {
     transform: rotate(-90deg);
 }*/
@@ -503,6 +609,17 @@ button.active {
 }
 
 #large-image[data-active-thumbnail="5"] {
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#current-image[src$="duschdraperi_e9cd93_Happiness95.png"] {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#large-image[data-active-thumbnail="23"] {
     overflow: hidden;
     padding: 20px;
     border-radius: 10px;
